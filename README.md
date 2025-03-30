@@ -26,7 +26,7 @@ System.out.println("Hashcode de 20: " + Integer.hashCode(20));
 
 En Java, la **clase String** utiliza el método `hashCode(String cadena)` para calcular el hash de un objeto String. Este método está implementado de la siguiente manera en la clase String:
 
-            hash = s * 31^(n-1) + s[1] * 31^(n-1) + ... + s[n-1]
+        hash = s[0] * 31^(n-1) + s[1] * 31^(n-2) + ... + s[n-2] * 31^1 + s[n-1] * 31^0
 
 - **s[i]** es el valor Unicode del carácter en la posición `i`
 - **n** es la longitud de la cadena.
