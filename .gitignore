@@ -1,0 +1,7 @@
+target/
+bin/
+html/
+.vscode/
+a.out
+*.dat
+*.csv
